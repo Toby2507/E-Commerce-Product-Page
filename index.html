@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/5ca15c60cd.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body class="font-primary h-screen">
+  <header>
+    <div class="container mx-auto relative">
+      <!-- Navigation -->
+      <nav class="flex items-center justify-between h-20 px-4 lg:border-b">
+          <div class="flex items-center h-20 space-x-20">
+            <div class="flex space-x-4 items-center">
+              <button class="open-sidebar text-xl lg:hidden"><i class="fa-solid fa-bars-staggered"></i></button>
+              <img src="images/logo.svg" alt="logo" class="-mt-2">
+            </div>
+            <!-- Desktop navs -->
+            <ul class="hidden flex-1 h-full items-center space-x-6 lg:flex lg:space-x-10">
+              <li class="flex h-full items-center border-b-2 border-transparent hover:border-b-2 hover:border-orange"><a href="#" class="text-base text-darkGrayishBlue capitalize hover:text-veryDarkBlue">collections</a></li>
+              <li class="flex h-full items-center border-b-2 border-transparent hover:border-b-2 hover:border-orange"><a href="#" class="text-base text-darkGrayishBlue capitalize hover:text-veryDarkBlue">men</a></li>
+              <li class="flex h-full items-center border-b-2 border-transparent hover:border-b-2 hover:border-orange"><a href="#" class="text-base text-darkGrayishBlue capitalize hover:text-veryDarkBlue">women</a></li>
+              <li class="flex h-full items-center border-b-2 border-transparent hover:border-b-2 hover:border-orange"><a href="#" class="text-base text-darkGrayishBlue capitalize hover:text-veryDarkBlue">about</a></li>
+              <li class="flex h-full items-center border-b-2 border-transparent hover:border-b-2 hover:border-orange"><a href="#" class="text-base text-darkGrayishBlue capitalize hover:text-veryDarkBlue">contact</a></li>
+            </ul>
+          </div>
+        <div class="flex items-center space-x-6">
+          <button class="open-cart relative">
+            <i class="fa-solid fa-cart-shopping text-xl text-darkGrayishBlue"></i>
+            <div class="notification hidden absolute -top-2 -right-2 bg-orange w-4 h-4 rounded-full text-white text-center text-xs">3</div>
+          </button>
+          <img src="images/image-avatar.png" alt="user avatar" class="h-7 w-7 object-contain -mt-2 rounded-full cursor-pointer hover:border hover:border-orange">
+        </div>
+      </nav>
+      <!-- cart box -->
+      <section class="infobox h-0 overflow-hidden absolute right-3 w-[93.5%] mt-2 z-10 transition-all duration-500 shadow-2xl rounded-md sm:w-80">
+        <div class="cart bg-white grid grid-rows-[auto_1fr]">
+          <h1 class="text-base text-veryDarkBlue font-bold capitalize px-6 py-4 border-b border-grayishBlue">cart</h1>
+          <div class="cartbox flex flex-col h-44 space-y-6 px-6 py-6 justify-center items-center overflow-y-scroll">
+            <h3 class="emptycart text-base text-darkGrayishBlue">Your cart is empty.</h3>
+            <ul class="cartitems flex flex-col space-y-4"></ul>
+            <!--checkout -->
+            <button class="checkout hidden w-full py-3 bg-orange rounded-lg text-sm text-white font-bold text-center capitalize">checkout</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- sidebar -->
+  <aside class="sidebar absolute top-0 left-0 w-60 bg-white px-6 py-8 h-screen flex flex-col space-y-8 z-30 -translate-x-full transition-all duration-1000">
+    <i class="close-sidebar fa-solid fa-xmark text-lg text-darkGrayishBlue cursor-pointer"></i>
+    <ul class="flex flex-col space-y-6">
+      <li><a href="#" class="text-veryDarkBlue text-lg font-bold capitalize">collections</a></li>
+      <li><a href="#" class="text-veryDarkBlue text-lg font-bold capitalize">men</a></li>
+      <li><a href="#" class="text-veryDarkBlue text-lg font-bold capitalize">women</a></li>
+      <li><a href="#" class="text-veryDarkBlue text-lg font-bold capitalize">about</a></li>
+      <li><a href="#" class="text-veryDarkBlue text-lg font-bold capitalize">contact</a></li>
+    </ul>
+  </aside>
+  <main class="container mx-auto mb-8 lg:flex lg:items-center lg:space-x-20 lg:my-16 lg:px-12">
+    <!-- lightbox -->
+    <section class="lightbox w-full grid items-center lg:h-auto"></section>
+    <!-- product info -->
+    <section class="product-info px-4 py-6 flex flex-col space-y-3 lg:space-y-6"></section>
+  </main>
+  <!-- modal container -->
+  <div class="modal-container absolute hidden">
+    <section class="lightbox w-1/2 mx-auto grid items-center lg:h-auto"></section>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>

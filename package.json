@@ -1,0 +1,24 @@
+{
+  "name": "eppage",
+  "version": "1.0.0",
+  "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toby2507/E-Commerce-Product-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toby2507/E-Commerce-Product-Page/issues"
+  },
+  "homepage": "https://github.com/Toby2507/E-Commerce-Product-Page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.4"
+  }
+}
