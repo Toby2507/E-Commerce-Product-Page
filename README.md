@@ -28,8 +28,8 @@ Users should be able to:
 ![](./images/mobile-screenshot.png)
 
 ### Links
--[Solution Link](https://github.com/Toby2507/E-Commerce-Product-Page)
--[Live Link]()
+- [Solution Link](https://github.com/Toby2507/E-Commerce-Product-Page)
+- [Live Link](https://toby2507.github.io/E-Commerce-Product-Page/)
 ### Built with
 
 - Semantic HTML5 markup
